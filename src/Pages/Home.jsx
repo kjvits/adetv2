@@ -8,7 +8,7 @@ function Home() {
     <div className="home-container">
       <div className="profile-image-container">
         <img
-          src="public/img/pfpic.jpg" // Replace with the actual image path
+          src="/img/pfpic.jpg" // Replace with the actual image path
           alt="Profile"
           className="profile-image"
         />
