@@ -27,9 +27,9 @@ const Contact = () => {
     emailjs
       .sendForm(
         'service_j6jr2ib',   // Replace with your service ID
-        'YOUR_TEMPLATE_ID',   // Replace with your template ID
+        '1',   // Replace with your template ID
         e.target,             // The form element
-        'YOUR_USER_ID'        // Replace with your user ID
+        'Ii34Yba3zW2H-r7Um'        // Replace with your user ID
       )
       .then(
         (result) => {
