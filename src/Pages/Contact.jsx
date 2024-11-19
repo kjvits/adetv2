@@ -26,7 +26,7 @@ const Contact = () => {
 
     emailjs.sendForm(
         'service_j6jr2ib',  // The Service ID: This identifies the email service you're using (you need to replace this with your actual service ID from EmailJS).
-        'template_g2nx5qw',                // The Template ID: This identifies the email template you want to use (replace '1' with your actual template ID).
+        '1',                // The Template ID: This identifies the email template you want to use (replace '1' with your actual template ID).
         e.target,           // The form element: This refers to the form you're submitting (e.target is the form itself in your case).
         'Ra7g5KnfzvTOgtctS' // The User ID: This is your user-specific key from EmailJS that allows access to the email service (replace this with your actual user ID).
       )
