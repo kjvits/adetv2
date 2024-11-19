@@ -26,7 +26,7 @@ function Home() {
         <a href="https://github.com/kjvits" target="_blank" rel="noopener noreferrer" className="icon-link">
           <FaGithub size={30} />
         </a>
-        <a href="facebook.com/jaysonkhurt" target="_blank" rel="noopener noreferrer" className="icon-link">
+        <a href="https://www.facebook.com/jaysonkhurt" target="_blank" rel="noopener noreferrer" className="icon-link">
           <FaFacebook size={30} />
         </a>
         <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="icon-link">
