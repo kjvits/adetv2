@@ -9,17 +9,17 @@ function Hobbies() {
       <h1>My Hobbies</h1>
       <p>Here are a few of the things I enjoy doing in my free time.</p>
       <div className="hobbies-images">
-        {/* Replace these <img> tags with your images */}
-        <img src="public/img/vsvs.jpg"  />
-        <img src="public/img/val.png"  />
-        <img src="public/img/wuwa.webp"  />
-        <img src="public/img/lol.png"  />
-        <img src="public/img/acad.webp"  />
-        <img src="public/img/drift.webp"  />
-        <img src="public/img/nano.webp"  />
-        <img src="public/img/swordhound.webp" />
-        <img src="public/img/orv.webp"  />
-        <img src="public/img/eleceed.webp" />
+        {/* Corrected image paths */}
+        <img src="/img/vsvs.jpg" alt="VS VS" />
+        <img src="/img/val.png" alt="Valorant" />
+        <img src="/img/wuwa.webp" alt="WUWU" />
+        <img src="/img/lol.png" alt="League of Legends" />
+        <img src="/img/acad.webp" alt="Academics" />
+        <img src="/img/drift.webp" alt="Drifting" />
+        <img src="/img/nano.webp" alt="Nano" />
+        <img src="/img/swordhound.webp" alt="Sword Hound" />
+        <img src="/img/orv.webp" alt="Omniscient Reader" />
+        <img src="/img/eleceed.webp" alt="Eleceed" />
       </div>
       <Link to="/contact" className="btn btn-primary">Get In Touch</Link>
     </div>
