@@ -15,7 +15,7 @@ function Home() {
       </div>
 
       <h1>Hi, I am Khurt Jayson Vita</h1>
-      <p>A man with no money!</p>
+      <p>BSCS- 2B!</p>
 
       <Link to="/about" className="btn btn-primary">
         Learn More
