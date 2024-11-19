@@ -1,0 +1,62 @@
+/* Education Section Container */
+.education-section {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.education-title {
+  font-size: 2rem;
+  color: #4285f4; /* Light Blue Color */
+  margin-bottom: 20px;
+}
+
+/* Education List Styling */
+.education-list {
+  list-style: none;
+  padding: 0;
+}
+
+.education-item {
+  margin: 15px 0;
+  text-align: left;
+  border-left: 3px solid #4285f4; /* Blue line */
+  padding-left: 10px;
+}
+
+.institution {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.details {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Button Styling */
+.education-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4285f4; /* Blue Button */
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.education-button:hover {
+  background-color: #357ae8; /* Darker Blue on Hover */
+}

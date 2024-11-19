@@ -1,0 +1,59 @@
+.hobbies-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hobbies-container h1 {
+  font-size: 2.5rem; /* Prominent title size */
+  font-weight: bold; /* Emphasize the title */
+  color: #4facfe; /* Solid fallback color */
+  margin-bottom: 10px; /* Space below title */
+  text-transform: capitalize; /* Optional: Capitalize text */
+}
+
+.hobbies-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.hobbies-images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.hobbies-images img {
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  border-radius: 50%; /* Makes the images circular */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  border: 3px solid #4C1D3D; /* Adds a border with your desired color */
+  transition: transform 0.3s ease-in-out;
+}
+
+.hobbies-images img:hover {
+  transform: scale(1.1); /* Grows the circle slightly on hover */
+}
+
+.btn {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #4facfe;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #3a8cc1;
+}
