@@ -43,8 +43,17 @@
   display: block;
 }
 
+.navbar-collapse.collapsing .home-link {
+  display: none;  /* Hide Home link when navbar is collapsing (during toggle) */
+}
+
 .navbar-collapse.collapse .home-link {
-  display: none;  /* Hide the Home link when the navbar is collapsed */
+  display: none;  /* Hide Home link when navbar is collapsed */
+}
+
+/* Show the Home link when navbar is expanded */
+.navbar-collapse.show .home-link {
+  display: block;  /* Make sure it shows when the navbar is expanded */
 }
 
 .navbar-collapse {
