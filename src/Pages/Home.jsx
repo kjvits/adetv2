@@ -32,9 +32,10 @@ function Home() {
         <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="icon-link">
           <FaDiscord size={30} />
         </a>
-        <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer" className="icon-link">
-          <FaGoogle size={30} />
-        </a>
+        <a
+  href="https://tinyurl.com/y6fkyjjh" target="_blank" rel="noopener noreferrer" className="icon-link">
+  <FaGoogle size={30} />
+</a>
       </div>
     </div>
   );
