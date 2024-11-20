@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'; // Import react-bootstrap components
+import { Navbar, Nav, Container } from 'react-bootstrap'; // Import react-bootstrap components
 import './Navbar.css';  // Ensure the CSS file is imported
 
 function NavbarComponent() {
+  const [isOpen, setIsOpen] = useState(false);  // State to track if the navbar is open or closed
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);  // Toggle the navbar state when clicked
+  };
+
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
         {/* Navbar Brand (Logo or Website name) */}
-        <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className={isOpen ? 'home-link-hidden' : ''}>
+          Home
+        </Navbar.Brand>
 
         {/* Navbar Toggler for mobile screens */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={toggleNavbar}
+          className={isOpen ? 'open' : ''}
+        />
 
         {/* Navbar Links */}
         <Navbar.Collapse id="basic-navbar-nav">
