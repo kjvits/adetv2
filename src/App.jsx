@@ -7,9 +7,6 @@ import Education from './Pages/Education';
 import Hobbies from './Pages/Hobbies';
 import Contact from './Pages/Contact';
 
-// Optional: 404 Page Not Found Component
-import NotFound from './Pages/NotFound'; 
-
 function App() {
   return (
     <Router>
@@ -32,9 +29,6 @@ function App() {
 
         {/* Route for the contact page */}
         <Route path="/contact" element={<Contact />} />
-
-        {/* Catch-all route for any invalid paths */}
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
