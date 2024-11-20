@@ -1,43 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'; // Import react-bootstrap components
 import './Navbar.css';  // Ensure the CSS file is imported
 
-function Navbar() {
+function NavbarComponent() {
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container">
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Container>
         {/* Navbar Brand (Logo or Website name) */}
-        <Link className="navbar-brand" to="/">Home</Link>
+        <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
 
         {/* Navbar Toggler for mobile screens */}
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
             {/* About Link */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
-            </li>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
             {/* Education Link */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/education">Education</Link>
-            </li>
+            <Nav.Link as={Link} to="/education">Education</Nav.Link>
             {/* Hobbies Link */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/hobbies">Hobbies</Link>
-            </li>
+            <Nav.Link as={Link} to="/hobbies">Hobbies</Nav.Link>
             {/* Contact Link */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default NavbarComponent;

@@ -1,3 +1,4 @@
+/* Navbar Styles */
 .navbar {
   background-color: #343a40;  /* Dark Gray Background */
   padding: 10px 20px;
@@ -41,7 +42,7 @@
   gap: 20px;
 }
 
-/* Responsive Styles */
+/* Mobile Specific Styles */
 @media (max-width: 768px) {
   .navbar-nav {
     text-align: center;
@@ -54,4 +55,3 @@
     padding: 10px;
   }
 }
-
