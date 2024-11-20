@@ -33,7 +33,7 @@ function Home() {
           <FaDiscord size={30} />
         </a>
         <a
-  href="https://tinyurl.com/y6fkyjjh" target="_blank" rel="noopener noreferrer" className="icon-link">
+  href="https://tinyurl.com/2ps9a89u" target="_blank" rel="noopener noreferrer" className="icon-link">
   <FaGoogle size={30} />
 </a>
       </div>
