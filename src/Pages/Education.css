@@ -60,3 +60,34 @@
 .education-button:hover {
   background-color: #357ae8; /* Darker Blue on Hover */
 }
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 576px) {
+  .education-section {
+    padding: 15px; /* Reduced padding for mobile */
+    max-width: 100%; /* Ensure full width on small screens */
+    margin: 0 10px; /* Reduced margin for better fit */
+  }
+
+  .education-title {
+    font-size: 1.5rem; /* Smaller title font size */
+    margin-bottom: 15px; /* Reduced margin below title */
+  }
+
+  .education-item {
+    padding-left: 8px; /* Reduced padding for smaller screens */
+  }
+
+  .institution {
+    font-size: 1.1rem; /* Slightly smaller font size */
+  }
+
+  .details {
+    font-size: 0.9rem; /* Smaller text for better readability */
+  }
+
+  .education-button {
+    padding: 8px 16px; /* Reduced button padding */
+    font-size: 0.9rem; /* Smaller button font size */
+  }
+}

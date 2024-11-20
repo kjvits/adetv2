@@ -46,3 +46,32 @@
   font-size: 16px;
   color: green;
 }
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 576px) {
+  .contact-container {
+    padding: 15px; /* Reduced padding for smaller screens */
+    max-width: 100%; /* Ensures the contact form spans full width on small screens */
+    margin: 0 10px; /* Reduced margin for better fit on mobile */
+  }
+
+  .contact-container h2 {
+    font-size: 20px; /* Smaller heading font size */
+    margin-bottom: 15px; /* Reduced bottom margin for compact spacing */
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    font-size: 1rem; /* Slightly smaller font for input fields */
+    padding: 8px; /* Slightly smaller padding */
+  }
+
+  .contact-container button {
+    padding: 8px; /* Reduced button padding */
+    font-size: 1rem; /* Adjusted font size for mobile */
+  }
+
+  .status-message {
+    font-size: 14px; /* Reduced font size for status message */
+  }
+}

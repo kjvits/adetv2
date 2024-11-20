@@ -1,3 +1,4 @@
+/* Hobbies Container */
 .hobbies-container {
   padding: 40px 20px;
   text-align: center;
@@ -11,6 +12,7 @@
   text-transform: capitalize; /* Optional: Capitalize text */
 }
 
+/* Hobbies Icons Grid */
 .hobbies-icons {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
@@ -19,6 +21,7 @@
   margin-top: 30px;
 }
 
+/* Hobbies Images Grid */
 .hobbies-images {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 columns */
@@ -41,6 +44,7 @@
   transform: scale(1.1); /* Grows the circle slightly on hover */
 }
 
+/* Button Style */
 .btn {
   margin-top: 30px;
   font-size: 1.2rem;
@@ -56,4 +60,37 @@
 
 .btn:hover {
   background-color: #3a8cc1;
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 576px) {
+  .hobbies-container {
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .hobbies-container h1 {
+    font-size: 2rem; /* Adjust font size for mobile */
+    margin-bottom: 15px; /* Add a bit more space below title */
+  }
+
+  .hobbies-icons {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Adjust column width for smaller icons */
+    gap: 15px; /* Reduce gap for compact layout */
+  }
+
+  .hobbies-images {
+    grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns */
+    gap: 15px; /* Reduce gap for compact spacing */
+  }
+
+  .hobbies-images img {
+    width: 80px; /* Smaller size for images */
+    height: 80px;
+    border: 2px solid #4C1D3D; /* Slightly thinner border */
+  }
+
+  .btn {
+    font-size: 1rem; /* Adjust button font size */
+    padding: 8px 16px; /* Reduce padding for smaller screens */
+  }
 }

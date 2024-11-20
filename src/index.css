@@ -16,7 +16,7 @@
 a {
   font-weight: 500;
   color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 a:hover {
   color: #535bf2;
@@ -25,14 +25,19 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  padding: 1rem; /* Added padding for mobile */
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2em; /* Adjusted for smaller screens */
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 button {
@@ -45,6 +50,8 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  width: 100%; /* Full-width buttons on small screens */
+  max-width: 300px; /* Limit size on larger screens */
 }
 button:hover {
   border-color: #646cff;
@@ -54,15 +61,39 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Additional responsive styles for mobile */
+@media (max-width: 576px) {
+  body {
+    padding: 1.5rem; /* Increased padding for better spacing on smaller screens */
   }
-  a:hover {
-    color: #747bff;
+
+  a {
+    font-size: 0.9rem; /* Slightly smaller links for compact display */
   }
+
   button {
-    background-color: #f9f9f9;
+    padding: 0.5em 1em; /* Adjust padding for smaller buttons */
+    margin-bottom: 1rem; /* Add spacing between buttons */
+  }
+
+  nav {
+    width: 100%; /* Ensure the navbar spans the full width */
+    padding: 0.5rem 1rem; /* Add padding for better touch usability */
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem; /* Compact toggler for smaller screens */
+    font-size: 0.9rem; /* Adjust size of the toggler */
+  }
+}
+
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8em; /* Smaller font for small screens */
+  }
+
+  button {
+    font-size: 0.9em; /* Slightly smaller buttons */
   }
 }

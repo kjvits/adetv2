@@ -1,3 +1,4 @@
+/* About.css */
 .about-container {
   text-align: center;
   margin: 0 auto;
@@ -49,4 +50,35 @@ h2 {
 
 .learn-more-btn:hover {
   background-color: #0056b3;
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 576px) {
+  .about-container {
+    padding: 30px 15px; /* Reduced padding for mobile screens */
+    max-width: 100%; /* Ensure container spans full width on mobile */
+  }
+
+  h2 {
+    font-size: 1.6em; /* Reduced font size for title */
+    margin-bottom: 10px; /* Reduced bottom margin */
+  }
+
+  .intro-text {
+    font-size: 1.1em; /* Adjusted font size */
+  }
+
+  .highlight {
+    font-size: 1.1em; /* Slightly larger text for emphasis */
+  }
+
+  .description, .hobbies {
+    font-size: 1rem; /* Slightly smaller font size for better readability on mobile */
+    margin-bottom: 15px; /* Reduced margin for compactness */
+  }
+
+  .learn-more-btn {
+    padding: 8px 16px; /* Reduced padding for smaller screens */
+    font-size: 0.9rem; /* Adjusted font size */
+  }
 }
