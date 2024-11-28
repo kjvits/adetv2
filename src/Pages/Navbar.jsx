@@ -15,7 +15,7 @@ function NavbarComponent() {
       <Container>
         {/* Navbar Brand (Logo or Website name) */}
         <Navbar.Brand as={Link} to="/" className={isOpen ? 'home-link-hidden' : ''}>
-          Home
+          My Fortfolio
         </Navbar.Brand>
 
         {/* Navbar Toggler for mobile screens */}
@@ -28,6 +28,7 @@ function NavbarComponent() {
         {/* Navbar Links */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
+          <Nav.Link as={Link} to="/">Home</Nav.Link>
             {/* About Link */}
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             {/* Education Link */}

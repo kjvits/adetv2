@@ -1,21 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Import Home-specific CSS
 import { FaGithub, FaFacebook, FaDiscord, FaGoogle } from 'react-icons/fa';
 
 function Home() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleImageHover = () => setIsHovered(!isHovered);
+
   return (
     <div className="home-container">
-      <div className="profile-image-container">
+      <div
+        className="profile-image-container"
+        onMouseEnter={handleImageHover}
+        onMouseLeave={handleImageHover}
+      >
         <img
           src="/img/pfpic.jpg" // Replace with the actual image path
           alt="Profile"
-          className="profile-image"
+          className={`profile-image ${isHovered ? 'hovered' : ''}`}
         />
       </div>
 
       <h1>Hi, I am Khurt Jayson Vita</h1>
       <p>BSCS- 2B!</p>
+
+      <p className="additional-text">
+        I'm passionate about coding, learning, and making a difference.
+      </p>
 
       <Link to="/about" className="btn btn-primary">
         Learn More

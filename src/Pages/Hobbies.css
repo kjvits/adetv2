@@ -1,96 +1,118 @@
-/* Hobbies Container */
+/* Hobbies Section Styling */
 .hobbies-container {
-  padding: 40px 20px;
   text-align: center;
+  padding: 40px 20px; /* Increased padding for more space around the content */
+  max-width: 100%; /* Allow container to use the full width */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 .hobbies-container h1 {
-  font-size: 2.5rem; /* Prominent title size */
-  font-weight: bold; /* Emphasize the title */
-  color: #4facfe; /* Solid fallback color */
-  margin-bottom: 10px; /* Space below title */
-  text-transform: capitalize; /* Optional: Capitalize text */
+  color: #007bff; /* Change "My Hobbies" color to blue */
+  font-size: 2.5rem; /* Adjust font size for the heading */
+  margin-bottom: 30px; /* Add margin at the bottom for spacing */
 }
 
-/* Hobbies Icons Grid */
+.hobbies-container p {
+  font-weight: bold; /* Make the paragraph bold */
+  font-size: 1.4rem; /* Increase font size for the paragraph */
+  margin-bottom: 30px; /* Add margin below the paragraph */
+  color: #495057; /* Set the color of the text */
+}
+
 .hobbies-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  margin-top: 30px;
+  grid-template-columns: repeat(3, 1fr); /* 3-column layout for larger screens */
+  gap: 40px; /* Increased space between items for a spacious look */
+  margin-top: 40px; /* Increased margin for more space above */
 }
 
-/* Hobbies Images Grid */
-.hobbies-images {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 columns */
-  gap: 20px;
-  justify-items: center;
-  margin-top: 30px;
+.hobby-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.hobbies-images img {
-  width: 100px; /* Adjust size */
-  height: 100px; /* Adjust size */
-  border-radius: 50%; /* Makes the images circular */
-  object-fit: cover; /* Ensures the image fits within the circle */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-  border: 3px solid #4C1D3D; /* Adds a border with your desired color */
-  transition: transform 0.3s ease-in-out;
+.hobby-item p {
+  font-size: 1.5rem; /* Increased font size for the hobby text */
+  margin-top: 15px; /* Added more space between the icon and text */
+  color: #495057;
+  text-align: center;
 }
 
-.hobbies-images img:hover {
-  transform: scale(1.1); /* Grows the circle slightly on hover */
+/* Description Styling */
+.hobby-item span.hobby-description {
+  display: block;
+  font-size: 1.3rem; /* Increased font size for descriptions */
+  color: #777;
+  margin-top: 8px; /* Added more space between the hobby text and description */
+  text-align: center; /* Center align the description */
 }
 
-/* Button Style */
+/* Responsive Design for Medium Screens */
+@media (max-width: 1024px) {
+  .hobbies-icons {
+    grid-template-columns: repeat(3, 1fr); /* Keep 3 columns on medium screens */
+  }
+
+  .hobby-item p {
+    font-size: 1.4rem; /* Slightly larger text on medium screens */
+  }
+
+  .hobby-item span.hobby-description {
+    font-size: 1.1rem; /* Slightly increase description size */
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .hobbies-icons {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    gap: 25px; /* Slightly smaller gap between items */
+  }
+
+  .hobby-item p {
+    font-size: 1.3rem; /* Larger text size on small screens */
+  }
+
+  .hobby-item span.hobby-description {
+    font-size: 1rem; /* Increase description size */
+  }
+}
+
+/* Extra Small Screens (Mobile) */
+@media (max-width: 576px) {
+  .hobbies-icons {
+    grid-template-columns: 1fr; /* One column on very small screens */
+    gap: 20px; /* Reduced gap between items */
+  }
+
+  .hobby-item p {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+
+  .hobby-item span.hobby-description {
+    font-size: 1rem; /* Slightly larger description font on mobile */
+  }
+
+  .hobbies-container {
+    padding: 20px 10px; /* Adjust padding for small screens */
+  }
+}
+
+/* Styling for the Button */
 .btn {
-  margin-top: 30px;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  background-color: #4facfe;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  margin-top: 50px; /* Add margin to move the button further down */
+  padding: 10px 30px; /* Add padding to the button */
+  font-size: 1.2rem; /* Adjust font size for button */
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .btn:hover {
-  background-color: #3a8cc1;
-}
-
-/* Mobile-Specific Adjustments */
-@media (max-width: 576px) {
-  .hobbies-container {
-    padding: 20px 10px; /* Reduce padding for smaller screens */
-  }
-
-  .hobbies-container h1 {
-    font-size: 2rem; /* Adjust font size for mobile */
-    margin-bottom: 15px; /* Add a bit more space below title */
-  }
-
-  .hobbies-icons {
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Adjust column width for smaller icons */
-    gap: 15px; /* Reduce gap for compact layout */
-  }
-
-  .hobbies-images {
-    grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns */
-    gap: 15px; /* Reduce gap for compact spacing */
-  }
-
-  .hobbies-images img {
-    width: 80px; /* Smaller size for images */
-    height: 80px;
-    border: 2px solid #4C1D3D; /* Slightly thinner border */
-  }
-
-  .btn {
-    font-size: 1rem; /* Adjust button font size */
-    padding: 8px 16px; /* Reduce padding for smaller screens */
-  }
+  background-color: #0056b3; /* Darker blue on hover */
 }

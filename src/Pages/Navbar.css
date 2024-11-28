@@ -31,11 +31,22 @@
 }
 
 .navbar-toggler-icon {
-  background-color: white;
-  width: 35px; /* Increased width for a larger toggler icon */
-  height: 4px; /* Increased height for better visibility */
-  border-radius: 5px;
+  background-color: transparent;  /* Make background transparent */
+  position: relative;
+  width: 35px; /* Set width for the icon */
+  height: 24px; /* Set height for the icon */
   transition: background-color 0.3s ease;
+}
+
+
+
+.navbar-toggler-icon span {
+  content: '';
+  position: absolute;
+  width: 35px; /* Same width for all three lines */
+  height: 4px; /* Line thickness */
+  background-color: white;  /* White color for visibility */
+  transition: transform 0.3s ease;
 }
 
 /* Hide the "Home" link on mobile when navbar is collapsed */
@@ -67,7 +78,7 @@
 /* Mobile Specific Styles */
 @media (max-width: 768px) {
   .navbar-nav {
-    text-align: center;
+    text-align: right;
     width: 100%;
     margin-top: 10px;
   }

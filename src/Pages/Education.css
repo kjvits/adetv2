@@ -1,93 +1,170 @@
-/* Education Section Container */
+/* General Education Section Styling */
 .education-section {
   font-family: Arial, sans-serif;
-  padding: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #e9ecef;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-/* Title Styling */
 .education-title {
-  font-size: 2rem;
-  color: #4285f4; /* Light Blue Color */
-  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #4285f4;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-/* Education List Styling */
-.education-list {
-  list-style: none;
-  padding: 0;
+/* Grid Layout for Left and Right Sections */
+.education-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+/* Education Column */
+.education-column {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 48%; /* Set each column to take up about 50% of the width */
+  margin-bottom: 30px; /* Add spacing between columns on smaller screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Align items starting from top */
+  text-align: center; /* Center text horizontally */
+}
+
+.education-column:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .education-item {
-  margin: 15px 0;
-  text-align: left;
-  border-left: 3px solid #4285f4; /* Blue line */
-  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  width: 100%; /* Ensure content takes full width of the column */
+}
+
+.education-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .institution {
-  display: block;
-  font-size: 1.2rem;
   font-weight: bold;
+  font-size: 1.5rem;
   color: #333;
+  margin-bottom: 10px; /* Space out the lines */
 }
 
 .details {
-  display: block;
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: #777; /* Lighter color for details */
+  margin-top: 5px;
+  margin-bottom: 15px; /* Add margin bottom to separate details from the button */
 }
 
-/* Button Styling */
-.education-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #4285f4; /* Blue Button */
+/* See More Button (Centered Below Text) */
+.see-more-button {
+  background-color: #4285f4;
   color: #fff;
   border: none;
-  font-weight: bold;
-  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
+  margin-top: 15px; /* Ensure button is below the text */
+  align-self: center; /* Center the button */
 }
 
-.education-button:hover {
-  background-color: #357ae8; /* Darker Blue on Hover */
+.see-more-button:hover {
+  background-color: #3367d6; /* Darker color on hover */
 }
 
-/* Mobile-Specific Adjustments */
-@media (max-width: 576px) {
-  .education-section {
-    padding: 15px; /* Reduced padding for mobile */
-    max-width: 100%; /* Ensure full width on small screens */
-    margin: 0 10px; /* Reduced margin for better fit */
-  }
+.achievements {
+  margin-top: 15px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 1rem;
+}
 
+/* Button for Learn More About My Hobbies */
+.learn-more-hobbies-btn {
+  margin-top: 30px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.learn-more-hobbies-btn:hover {
+  transform: translateY(-5px);
+  background-color: #3367d6;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
   .education-title {
-    font-size: 1.5rem; /* Smaller title font size */
-    margin-bottom: 15px; /* Reduced margin below title */
+    font-size: 2rem; /* Adjust title font size on small screens */
+    margin-bottom: 20px;
   }
 
-  .education-item {
-    padding-left: 8px; /* Reduced padding for smaller screens */
+  .education-grid {
+    justify-content: center; /* Center content */
+    padding: 0 10px;
+  }
+
+  .education-column {
+    flex: 0 0 100%; /* Full width for each column */
+    margin-bottom: 20px; /* Less gap between items on small screens */
+  }
+
+  .learn-more-hobbies-btn {
+    width: 100%; /* Make button take up full width on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .education-title {
+    font-size: 1.5rem; /* Further adjust title font size on very small screens */
+  }
+
+  .education-item img {
+    width: 60px; /* Make images smaller on smaller screens */
+    height: 60px;
   }
 
   .institution {
-    font-size: 1.1rem; /* Slightly smaller font size */
+    font-size: 1.2rem; /* Reduce font size for institutions */
   }
 
   .details {
-    font-size: 0.9rem; /* Smaller text for better readability */
-  }
-
-  .education-button {
-    padding: 8px 16px; /* Reduced button padding */
-    font-size: 0.9rem; /* Smaller button font size */
+    font-size: 1rem; /* Reduce font size for details */
   }
 }
