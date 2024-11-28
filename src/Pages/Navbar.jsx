@@ -15,7 +15,7 @@ function NavbarComponent() {
       <Container>
         {/* Navbar Brand (Logo or Website name) */}
         <Navbar.Brand as={Link} to="/" className={isOpen ? 'home-link-hidden' : ''}>
-          My Fortfolio
+          MY FORTFOLIO
         </Navbar.Brand>
 
         {/* Navbar Toggler for mobile screens */}
