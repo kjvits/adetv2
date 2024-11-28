@@ -121,6 +121,11 @@ h2 {
 
 /* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
+  /* Add padding to top of about-container to avoid overlap with navbar */
+  .about-container {
+    padding-top: 400px; /* Adjust this value based on your navbar height */
+  }
+
   .two-column {
     grid-template-columns: 1fr; /* Single column on smaller screens */
     padding-left: 10px;  /* Add padding to the left for mobile */
@@ -128,11 +133,11 @@ h2 {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .intro-text {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .description, .personal-info, .hobbies, .aspiration {

@@ -98,9 +98,9 @@ p {
 }
 
 /* Mobile-Specific Adjustments */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .home-container {
-    padding: 15px; /* Adjusted padding for mobile */
+    padding-top: 400px; /* Adjusted padding for mobile */
     animation: fadeIn 1s ease-out; /* Fade-in animation for mobile */
   }
 
