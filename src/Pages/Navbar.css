@@ -2,6 +2,7 @@
 .navbar {
   background-color: #343a40;  /* Dark Gray Background */
   padding: 10px 20px;
+  animation: slideIn 0.5s ease-out;
 }
 
 .navbar-brand {
@@ -9,6 +10,7 @@
   color: white !important;
   font-weight: bold;
   letter-spacing: 1px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .navbar-brand:hover {
@@ -22,6 +24,7 @@
   padding: 8px 15px;
   border-radius: 5px;
   transition: all 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
@@ -38,8 +41,6 @@
   transition: background-color 0.3s ease;
 }
 
-
-
 .navbar-toggler-icon span {
   content: '';
   position: absolute;
@@ -49,7 +50,6 @@
   transition: transform 0.3s ease;
 }
 
-/* Hide the "Home" link on mobile when navbar is collapsed */
 .navbar-nav .home-link {
   display: block;
 }
@@ -62,7 +62,6 @@
   display: none;  /* Hide Home link when navbar is collapsed */
 }
 
-/* Show the Home link when navbar is expanded */
 .navbar-collapse.show .home-link {
   display: block;  /* Make sure it shows when the navbar is expanded */
 }
@@ -86,5 +85,24 @@
   .nav-link {
     margin-left: 0;
     padding: 10px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

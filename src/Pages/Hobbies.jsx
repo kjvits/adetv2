@@ -18,17 +18,17 @@ function Hobbies() {
         <div className="hobby-item">
           <FaPlane size={50} />
           <p>Travel</p>
-          <span className="hobby-description">Experiencing new cultures and discovering breathtaking destinations.</span>
+          <span className="hobby-description">Experiencing new locations and discovering breathtaking destinations.</span>
         </div>
         <div className="hobby-item">
           <FaRunning size={50} />
           <p>Running</p>
-          <span className="hobby-description">Staying fit and clearing my mind while enjoying the outdoors.</span>
+          <span className="hobby-description">Started making it a hobby to lessen the weight and have a healthy body.</span>
         </div>
         <div className="hobby-item">
           <FaGamepad size={50} />
           <p>Gaming</p>
-          <span className="hobby-description">Immersing myself in exciting virtual worlds and challenges.</span>
+          <span className="hobby-description">Immersing myself in exciting virtual worlds and competitive challenges.</span>
         </div>
         <div className="hobby-item">
           <FaLaptopCode size={50} />
@@ -38,7 +38,7 @@ function Hobbies() {
         <div className="hobby-item">
           <FaBook size={50} />
           <p>Reading</p>
-          <span className="hobby-description">Diving into books that broaden my knowledge and imagination.</span>
+          <span className="hobby-description">Diving into comic books that is interesting to my perspective.</span>
         </div>
       </div>
       <Link to="/contact" className="btn btn-primary">Get In Touch</Link>

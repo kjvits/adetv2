@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  animation: fadeIn 1s ease-out; /* Fade-in effect for the section */
 }
 
 .education-title {
@@ -17,6 +18,7 @@
   color: #4285f4;
   margin-bottom: 40px;
   text-align: center;
+  animation: fadeIn 1.5s ease-out; /* Fade-in effect for the title */
 }
 
 /* Grid Layout for Left and Right Sections */
@@ -28,6 +30,7 @@
   max-width: 1400px;
   padding: 0 20px;
   flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+  animation: slideUp 1.5s ease-out; /* Slide-up effect for the grid */
 }
 
 /* Education Column */
@@ -44,6 +47,7 @@
   align-items: center; /* Center content horizontally */
   justify-content: flex-start; /* Align items starting from top */
   text-align: center; /* Center text horizontally */
+  animation: fadeIn 2s ease-out; /* Fade-in effect for each column */
 }
 
 .education-column:hover {
@@ -66,6 +70,7 @@
   margin-bottom: 10px;
   border-radius: 50%;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  animation: zoomIn 1s ease-out; /* Zoom-in effect for images */
 }
 
 .institution {
@@ -94,12 +99,14 @@
   transition: background-color 0.3s ease;
   margin-top: 15px; /* Ensure button is below the text */
   align-self: center; /* Center the button */
+  animation: bounce 1.5s ease-out infinite; /* Bounce effect for the button */
 }
 
 .see-more-button:hover {
   background-color: #3367d6; /* Darker color on hover */
 }
 
+/* Achievements Section */
 .achievements {
   margin-top: 15px;
   background-color: #f9f9f9;
@@ -108,6 +115,7 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   font-size: 1rem;
+  animation: fadeIn 2.5s ease-out; /* Fade-in effect for achievements */
 }
 
 /* Button for Learn More About My Hobbies */
@@ -121,6 +129,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: slideUp 1s ease-out; /* Slide-up effect for hobby button */
 }
 
 .learn-more-hobbies-btn:hover {
@@ -166,5 +175,46 @@
 
   .details {
     font-size: 1rem; /* Reduce font size for details */
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }

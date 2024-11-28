@@ -10,7 +10,7 @@ function About() {
       <div className="about-header">
         <div className="profile-image-container">
           <img 
-            src="/img/pfpic.jpg"  // Replace with the actual image path
+            src="/img/aboupic.jpg"  // Replace with the actual image path
             alt="Profile"
             className="profile-image" 
           />
@@ -20,7 +20,7 @@ function About() {
 
       {/* Intro Text */}
       <p className="intro-text">
-        I'm <span className="highlight">Khurt Jayson Vita</span>
+       <span className="highlight">Khurt Jayson Vita</span>
       </p>
 
       {/* Description - Two Column Layout */}
@@ -29,7 +29,7 @@ function About() {
           I’m a sophomore student at the College of Computer Studies majoring in Computer Science. Currently, I'm building my portfolio and expanding my knowledge in web development, app creation, and problem-solving.
         </p>
         <div className="personal-info">
-          <p><strong>Location:</strong> <span className="highlight">[Your Location]</span></p>
+          <p><strong>Location:</strong> <span className="highlight">[Naga City, Philippines]</span></p>
           <p><strong>Current Occupation:</strong> Student, Aspiring Developer</p>
           <p><strong>What I Do:</strong> I spend my days coding, gaming, reading, and exploring new technologies. I enjoy challenging myself with different projects, especially in areas like full-stack development and AI.</p>
         </div>

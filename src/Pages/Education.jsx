@@ -14,25 +14,25 @@ const Education = () => {
       img: '/img/NCF.jpg',
       institution: 'Naga College Foundation Inc.',
       details: 'B.S. in Computer Science 2023 to Current',
-      achievements: ['Dean’s List - 1st Semester 2023', 'Participated in National Coding Competition'],
+      achievements: ['Finished MicrosoftOfficeCertifications', 'N/A'],
     },
     {
       img: '/img/ACLC.png',
       institution: 'AMA Computer Learning Center (ACLC)',
       details: 'Computer System Servicing (CSS) 2021-2023',
-      achievements: ['Completed Advanced Troubleshooting Course', 'IT Support Internship'],
+      achievements: ['Completed Computer System Servicing', 'Finished IT Practicum '],
     },
     {
       img: '/img/TINAGO.png',
       institution: 'Tinago National High School',
       details: 'Secondary Level 2017-2021',
-      achievements: ['Top 10 Graduates', 'Class President'],
+      achievements: ['N/A', 'N/A'],
     },
     {
       img: '/img/NCS1.jpg',
       institution: 'Naga Central School 1',
       details: 'Primary Level 2012-2017',
-      achievements: ['Best in Math', 'Gold Medalist in Regional Spelling Bee'],
+      achievements: ['Finished in top 10 of Class', 'Joined DXMC Competition for 3years'],
     },
   ];
 
